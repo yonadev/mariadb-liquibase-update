@@ -1,5 +1,5 @@
 Base layer for Liquibase update
-==================================
+=================================
 
 This image is created as base layer for a image that contains the database schema of an application version. To use it, derive an image from it and add the root change log file to as /changelogs/changelog with your preferred file extension.
 
