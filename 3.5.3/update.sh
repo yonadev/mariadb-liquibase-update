@@ -6,8 +6,10 @@ echo "Setting up liquibase"
 : ${USER?"USER not set"}
 : ${PASSWORD?"PASSWORD not set"}
 : ${URL?"URL not set"}
-CHANGE_LOG=`echo /changelogs/changelog.*`
-[ -f $CHANGE_LOG ] || (echo "Cannot find a single change log matching /changelogs/changelog.*" ; exit $ERROR_EXIT_CODE)
+[ -d /changelogs ] || (echo "Folder /changelogs/ does not exist" ; exit $ERROR_EXIT_CODE)
+cd /changelogs
+CHANGE_LOG=`echo changelog.*`
+[ -f "$CHANGE_LOG" ] || (echo "Cannot find a single change log matching /changelogs/changelog.*" ; exit $ERROR_EXIT_CODE)
 
 cat <<CONF > liquibase.properties
   driver: org.mariadb.jdbc.Driver

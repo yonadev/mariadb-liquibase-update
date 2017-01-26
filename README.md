@@ -3,7 +3,7 @@ Base layer for Liquibase update
 
 This image is created as base layer for a image that contains the database schema of an application version. To use it, derive an image from it and add the root change log file to as /changelogs/changelog with your preferred file extension.
 
-This image runs [Liquibase update](http://www.liquibase.org/documentation/update.html) with the change log /changelogs/changelog.\* and the MariaDB JDBC driver.
+This image runs [Liquibase update](http://www.liquibase.org/documentation/update.html) with the change log ``/changelogs/changelog.\*`` and the MariaDB JDBC driver. This actually runs from the ``/changelogs/`` folder, so the paths in the ``FILENAME`` column of the ``databasechangelog`` table will be relative to that folder.
 
 #### Example use
 Derive an image from it like this:
