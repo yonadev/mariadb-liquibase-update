@@ -5,7 +5,6 @@
 
 ERROR_EXIT_CODE=1
 GIT_BASE="https://raw.githubusercontent.com/yonadev/yona-server/"
-set -x
 
 apply_external_json () {
   SOURCE="${GIT_BASE}build-${RELEASE}/dbinit/data/${1}"
