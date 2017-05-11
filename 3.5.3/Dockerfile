@@ -8,6 +8,10 @@ RUN mkdir -p /opt/liquibase &&\
   mkdir -p /home/rundir &&\
   mkdir /scripts
 
+# Add jq (to validate json)
+ADD https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 /usr/local/bin/jq
+RUN chmod +x /usr/local/bin/jq
+
 # Add liquibase
 ADD http://repo1.maven.org/maven2/org/liquibase/liquibase-core/3.5.3/liquibase-core-3.5.3-bin.tar.gz /opt/liquibase/liquibase-core-bin.tar.gz
 WORKDIR /opt/liquibase
