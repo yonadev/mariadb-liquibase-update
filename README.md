@@ -1,3 +1,8 @@
+[![Docker Stars](https://img.shields.io/docker/stars/yonadev/mariadb-liquibase-update.svg)](https://hub.docker.com/r/yonadev/mariadb-liquibase-update/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/yonadev/mariadb-liquibase-update.svg)](https://hub.docker.com/r/yonadev/mariadb-liquibase-update/)
+[![Docker Automated build](https://img.shields.io/docker/automated/yonadev/mariadb-liquibase-update.svg)](https://hub.docker.com/r/yonadev/mariadb-liquibase-update/)
+
+
 Base layer for Liquibase update
 =================================
 
