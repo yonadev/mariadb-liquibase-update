@@ -13,7 +13,7 @@ This image runs [Liquibase update](http://www.liquibase.org/documentation/update
 #### Example use
 Derive an image from it like this:
 ```
-FROM yonadev/mariadb-liquibase-update:3.5.3
+FROM yonadev/mariadb-liquibase-update:3.6.3
 
 COPY liquibase/logs /changelogs
 ```
