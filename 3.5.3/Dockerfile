@@ -12,7 +12,7 @@ ENV REPO_BASE_URL https://repo1.maven.org/maven2
 
 # Add liquibase
 ENV LIQUIBASE_VERSION 3.5.3
-ADD ${REPO_BASE_URL}/org/liquibase/liquibase-core/${LIQUIBASE_VERSION}/liquibase-core-${LIQUIBASE_VERSION}.tar.gz /opt/liquibase/liquibase-core-bin.tar.gz
+ADD ${REPO_BASE_URL}/org/liquibase/liquibase-core/${LIQUIBASE_VERSION}/liquibase-core-${LIQUIBASE_VERSION}-bin.tar.gz /opt/liquibase/liquibase-core-bin.tar.gz
 WORKDIR /opt/liquibase
 RUN tar -xzf liquibase-core-bin.tar.gz &&\
   rm liquibase-core-bin.tar.gz &&\
