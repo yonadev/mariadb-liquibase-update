@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:11.0.15-jre-slim
 
 WORKDIR /opt/mariadb
 
