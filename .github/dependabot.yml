@@ -1,6 +1,6 @@
 version: 2
 updates:
   - package-ecosystem: "docker"
-    directory: "/4.3.5/Dockerfile"
+    directory: "/4.3.5"
     schedule:
       interval: "daily"
