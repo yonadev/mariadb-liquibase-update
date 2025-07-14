@@ -7,7 +7,7 @@ RUN mkdir -p /opt/liquibase &&\
   mkdir -p /opt/jdbc_drivers &&\
   mkdir -p /home/rundir &&\
   mkdir /scripts &&\
-  apk add --no-cache bash
+  apk add --no-cache bash curl
 
 ENV REPO_BASE_URL https://repo1.maven.org/maven2
 
