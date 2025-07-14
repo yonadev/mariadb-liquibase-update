@@ -1,4 +1,4 @@
-FROM openjdk:11.0.15-jre-slim
+FROM eclipse-temurin:21.0.7_6-jre-alpine
 
 WORKDIR /opt/mariadb
 
