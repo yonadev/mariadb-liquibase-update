@@ -6,7 +6,8 @@ WORKDIR /opt/mariadb
 RUN mkdir -p /opt/liquibase &&\
   mkdir -p /opt/jdbc_drivers &&\
   mkdir -p /home/rundir &&\
-  mkdir /scripts
+  mkdir /scripts &&\
+  apk add --no-cache bash
 
 ENV REPO_BASE_URL https://repo1.maven.org/maven2
 
