@@ -28,5 +28,5 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: "{{defaultContext}}:${{ env.SUBDIR }}"
-          push: ${{ !inputs.is-pr-build }}
+          push: ${{ github.event_name != 'pull_request' }}
           tags: yonadev/mariadb-liquibase-update:latest,yonadev/mariadb-liquibase-update:${{ env.SUBDIR }}
