@@ -1,4 +1,4 @@
-FROM eclipse-temurin:26.0.2.1_1-jre-alpine
+FROM eclipse-temurin:27_35-jre-alpine
 
 WORKDIR /opt/mariadb
 
